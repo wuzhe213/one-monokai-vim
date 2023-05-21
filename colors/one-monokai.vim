@@ -73,8 +73,9 @@ let s:black       = { "gui": "#18202a", "cterm": "23" }
 let s:lightblack  = { "gui": "#2D2E27", "cterm": "235" }
 let s:lightblack2 = { "gui": "#383a3e", "cterm": "236" }
 let s:darkblack   = { "gui": "#1e202b", "cterm": "16" }
-let s:middleblack = { "gui": "#18191b", "cterm": "16" }
-let s:darkerblack = { "gui": "#141518", "cterm": "16" }
+let s:middleblack = { "gui": "#192331", "cterm": "40" }
+let s:middleblack2 = { "gui": "#202735", "cterm": "40" }
+let s:darkerblack = { "gui": "#202735", "cterm": "16" }
 let s:grey        = { "gui": "#4B5261", "cterm": "59" }
 let s:lightgrey   = { "gui": "#9CA3B2", "cterm": "145" }
 let s:darkgrey    = { "gui": "#64645e", "cterm": "239" }
@@ -105,7 +106,7 @@ call s:h("Cursor",        { "fg": s:black,      "bg": s:white })
 call s:h("CursorColumn",  {                     "bg": s:lightblack2 })
 call s:h("CursorLine",    {                     "bg": s:lightblack2})
 call s:h("NonText",       { "fg": s:grey })
-call s:h("StatusLine",    { "fg": s:lightgrey,   "bg": s:darkerblack})
+call s:h("StatusLine",    { "fg": s:lightgrey,   "bg": s:middleblack2})
 call s:h("StatusLineNC",  { "fg": s:lightgrey,   "bg": s:middleblack})
 call s:h("TabLine",       { "fg": s:white,      "bg": s:darkblack,    "format": "reverse" })
 call s:h("Visual",        {                     "bg": s:grey})
@@ -385,3 +386,4 @@ endfunction
 
 au Syntax * call s:HighlightOperators()
 au ColorScheme * call s:HighlightOperators()
+
