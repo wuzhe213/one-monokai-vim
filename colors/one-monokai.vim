@@ -68,7 +68,7 @@ endfunction
 " --------
 
 
-let s:white       = { "gui": "#979ba8", "cterm": "145" }
+let s:white       = { "gui": "#9da1ad", "cterm": "145" }
 let s:black       = { "gui": "#18202a", "cterm": "23" }
 let s:lightblack  = { "gui": "#2D2E27", "cterm": "235" }
 let s:lightblack2 = { "gui": "#383a3e", "cterm": "236" }
@@ -121,6 +121,7 @@ call s:h("VertSplit",     { "fg": s:darkerblack,   "bg": s:middleblack2})
 call s:h("LineNr",        { "fg": s:grey,       "bg": s:black})
 call s:h("CursorLineNr",  { "fg": s:white,     "bg": s:black})
 call s:h("SignColumn",    {                     "bg": s:black})
+call s:h("WildMenu",    {                     "bg": s:grey})
 
 " misc
 call s:h("SpecialKey",    { "fg": s:pink })
@@ -386,4 +387,3 @@ endfunction
 
 au Syntax * call s:HighlightOperators()
 au ColorScheme * call s:HighlightOperators()
-
