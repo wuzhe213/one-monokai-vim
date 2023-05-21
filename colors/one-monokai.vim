@@ -68,12 +68,13 @@ endfunction
 " --------
 
 
-let s:white       = { "gui": "#ABB2BF", "cterm": "145" }
-let s:black       = { "gui": "#282C34", "cterm": "23" }
+let s:white       = { "gui": "#A4A8B3", "cterm": "145" }
+let s:black       = { "gui": "#18202a", "cterm": "23" }
 let s:lightblack  = { "gui": "#2D2E27", "cterm": "235" }
 let s:lightblack2 = { "gui": "#383a3e", "cterm": "236" }
-let s:darkblack   = { "gui": "#26292F", "cterm": "16" }
-let s:darkerblack = { "gui": "#1E2024", "cterm": "16" }
+let s:darkblack   = { "gui": "#1e202b", "cterm": "16" }
+let s:middleblack = { "gui": "#18191b", "cterm": "16" }
+let s:darkerblack = { "gui": "#141518", "cterm": "16" }
 let s:grey        = { "gui": "#4B5261", "cterm": "59" }
 let s:lightgrey   = { "gui": "#9CA3B2", "cterm": "145" }
 let s:darkgrey    = { "gui": "#64645e", "cterm": "239" }
@@ -105,7 +106,7 @@ call s:h("CursorColumn",  {                     "bg": s:lightblack2 })
 call s:h("CursorLine",    {                     "bg": s:lightblack2})
 call s:h("NonText",       { "fg": s:grey })
 call s:h("StatusLine",    { "fg": s:lightgrey,   "bg": s:darkerblack})
-call s:h("StatusLineNC",  { "fg": s:lightgrey,   "bg": s:darkblack})
+call s:h("StatusLineNC",  { "fg": s:lightgrey,   "bg": s:middleblack})
 call s:h("TabLine",       { "fg": s:white,      "bg": s:darkblack,    "format": "reverse" })
 call s:h("Visual",        {                     "bg": s:grey})
 call s:h("Search",        { "fg": s:black,      "bg": s:yellow })
@@ -115,7 +116,7 @@ call s:h("ModeMsg",       { "fg": s:yellow })
 call s:h("MoreMsg",       { "fg": s:yellow })
 call s:h("ErrorMsg",      { "fg": s:black,      "bg": s:red,          "format": "standout" })
 call s:h("WarningMsg",    { "fg": s:red })
-call s:h("VertSplit",     { "fg": s:darkerblack,   "bg": s:black})
+call s:h("VertSplit",     { "fg": s:darkerblack,   "bg": s:lightblack2})
 call s:h("LineNr",        { "fg": s:grey,       "bg": s:black})
 call s:h("CursorLineNr",  { "fg": s:white,     "bg": s:black})
 call s:h("SignColumn",    {                     "bg": s:black})
